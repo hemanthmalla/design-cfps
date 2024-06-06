@@ -104,7 +104,7 @@ We need the DNS Rules for the Standalone DNS proxy to enforce the L7 DNS policy.
 #### Option 1: Running the GRPC sever in the agent[Recommended]
 
 We can run a gRPC server in the agent to serve the DNS rules to the DNS proxy. SDP will be responsible for creating the connection with the agent. And once SDP establishes a connection, agent can keep track of the stream to notify SDP of DNS rules.
-In case, cilium agent is still not up, SDP will keep trying to connect to the agent until the connection is established. 
+In case, cilium agent is still not up, SDP will retry until the connection is established. 
 
 ##### Pros
 
