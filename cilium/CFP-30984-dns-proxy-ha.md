@@ -99,7 +99,7 @@ Since policy revision numbers from Cilium are reset when the local Cilium instan
 
 ### Getting the DNS Rules
 
-We need the DNS Rules for the Standalone DNS proxy to enforce the L7 DNS policy. The policy are the source of turth for the rules and are propagated to the agent when we apply the policy. We explore the options to get the DNS rules for the DNS proxy.
+We need the DNS Rules for the Standalone DNS proxy to enforce the L7 DNS policy. Network policies are the source of truth for the rules and are propagated to the agent when we apply the policy. We explore different options SDP can stay up-to date with latest DNS rules : 
 
 #### Option 1: Running the GRPC sever in the agent[Recommended]
 
